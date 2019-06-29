@@ -1,0 +1,30 @@
+Llamada de calidad - llamada-calidad.html
+
+Alta cuenta proveedor (modal) - alta-proveedor.html
+
+Reporte Visitas (modal) - reporte-visita.html
+
+Contacto Administrativo (moal) - contacto-administrativo.html
+
+Activo Agregar - activo-agregar.html
+
+Activo > Lista > Elemento (modal) - activo-lista-elemento.html
+
+Elemento > Apoderado - elemento-apoderado.html
+
+Elemento > Alta Aval - alta-aval.html
+
+Elemento > Alta Cliente - alta-cliente.html
+
+Elemento > Documentacion - elemento-documentacion.html
+
+Datos del Poder - datos-poder.html
+
+Datos de Constitucion - datos-constitucion.html
+
+Elemento > Referencias - referencias.html
+
+Paramétricos - parametricos.html
+
+Proveedores -  proveedores.html
+

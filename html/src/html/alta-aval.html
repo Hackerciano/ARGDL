@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Hyper - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- inline style to handle loading of various element-->
+        <style>body.loading {visibility: hidden;}</style>
+
+        <!-- third party css -->
+        <link href="assets/css/vendor/dataTables.bootstrap4.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/vendor/responsive.bootstrap4.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/vendor/buttons.bootstrap4.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/vendor/select.bootstrap4.css" rel="stylesheet" type="text/css" />
+        <!-- third party css end -->
+
+        <!-- App css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="main-style-container" />
+
+    </head>
+
+    <body class="loading">
+        <div id="detached-topbar-placeholder"></div>
+        <!-- Begin page -->
+        <div class="wrapper">
+
+            <div id="vertical-sidebar-placeholder"></div>
+            <div id="detached-sidebar-placeholder"></div>
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <div id="vertical-topbar-placeholder"></div>
+                    <div id="horizontal-topbar-placeholder"></div>
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Activos</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Lista</a></li>
+                                            <li class="breadcrumb-item active">Alta Aval</li>
+                                        </ol>
+                                    </div>
+                                    <h4 class="page-title">Alta Aval</h4>
+                                </div>
+                            </div>
+                        </div>     
+                        <!-- end page title --> 
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title">Alta Aval</h4>
+                                        <h4>&nbsp</h4>
+                                        
+
+                                        <table id="scroll-horizontal-datatable" class="table w-100 nowrap">
+                                            <thead>
+                                                <tr>
+                                                        <th>Tipo de Persona</th>
+                                                        <th>Id Solicitud</th>
+                                                        <th>Id Cliente</th>
+                                                        <th>Nombre</th>
+                                                        <th>Apellido Paterno</th>
+                                                        <th>Apellido Materno</th>
+                                                        <th>Fecha de Nacimiento</th>
+                                                        <th>Lugar de Nacimiento</th>
+                                                        <th>CURP</th>
+                                                        <th>RFC</th>
+                                                        <th>CP</th>
+                                                        <th>Municipio</th>
+                                                        <th>Colonia</th>
+                                                        <th>Num. Exterior</th>
+                                                        <th>Num. Interior</th>
+                                                        <th>Entidad</th>
+                                                        <th>Sexo</th>
+                                                        <th>Teléfono</th>
+                                                        <th>Correo</th>
+                                                        <th>Estatus de Casa</th>
+                                                        <th>Añadir Aval</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <select class="form-control" id="Sexo">
+                                                                <option>Física</option>
+                                                                <option>Moral</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="IdSolicitud">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="IdCliente">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="NombreCliente">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="ApellidoPaterno">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="ApellidoMaterno">
+                                                    </td>
+                                                    <td>
+                                                            <input type="text" class="form-control date" id="FechaNacimientoFrom" data-toggle="date-picker" data-single-date-picker="true">
+                                                    </td>
+                                                    <td>    
+                                                        <select class="form-control" id="LugarNacimiento">
+                                                            <option>Aguascalientes</option>
+                                                            <option>Baja California</option>
+                                                            <option>Baja California Sur</option>
+                                                            <option>Chiapas</option>
+                                                            <option>Chihuahua</option>
+                                                            <option>Coahuila</option>
+                                                            <option>Colima</option>
+                                                            <option>Durango</option>
+                                                            <option>Estado de México</option>
+                                                            <option>Guanajuato</option>
+                                                            <option>Guerrero</option>
+                                                            <option>Hidalgo</option>
+                                                            <option>Jalisco</option>
+                                                            <option>Michoacán</option>
+                                                            <option>Morelos</option>
+                                                            <option>Nayarit</option>
+                                                            <option>Nuevo León</option>
+                                                            <option>Oaxaca</option>
+                                                            <option>Puebla</option>
+                                                            <option>Querétaro</option>
+                                                            <option>Quintana Roo</option>
+                                                            <option>San Luis Potosí</option>
+                                                            <option>Sinaloa</option>
+                                                            <option>Sonora</option>
+                                                            <option>Tabasco</option>
+                                                            <option>Tamaulipas</option>
+                                                            <option>Ciudad de México</option>
+                                                            <option>Tlaxcala</option>
+                                                            <option>Veracruz</option>
+                                                            <option>Yucatán</option>
+                                                            <option>Zacatecas</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="CURP">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="RFC">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="CP">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="Municipio">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="Colonia">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="Num. Exterior">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="Num. Interior">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="Entidad">
+                                                    </td>
+                                                    <td>
+                                                            <select class="form-control" id="Sexo">
+                                                                    <option>Hombre</option>
+                                                                    <option>Mujer</option>
+                                                            </select>
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="Telefono">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="Correo">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="EstatusCasa">
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="">Añadir</button>
+                                                    </td>
+                                                </tr>
+                                               
+                                            </tbody>
+                                        </table>
+
+                                    </div> <!-- end card body-->
+                                </div> <!-- end card -->
+                            </div><!-- end col-->
+                        </div>
+                        <!-- end row-->
+
+
+                            </div><!-- end col-->
+                        </div>
+                        <!-- end row-->
+                        
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                @@include('./partials/footer.html')
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+
+        @@include('./partials/right-sidebar.html')
+
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+
+        <!-- third party js -->
+        <script src="assets/js/vendor/jquery.dataTables.min.js"></script>
+        <script src="assets/js/vendor/dataTables.bootstrap4.js"></script>
+        <script src="assets/js/vendor/dataTables.responsive.min.js"></script>
+        <script src="assets/js/vendor/responsive.bootstrap4.min.js"></script>
+        <script src="assets/js/vendor/dataTables.buttons.min.js"></script>
+        <script src="assets/js/vendor/buttons.bootstrap4.min.js"></script>
+        <script src="assets/js/vendor/buttons.html5.min.js"></script>
+        <script src="assets/js/vendor/buttons.flash.min.js"></script>
+        <script src="assets/js/vendor/buttons.print.min.js"></script>
+        <script src="assets/js/vendor/dataTables.keyTable.min.js"></script>
+        <script src="assets/js/vendor/dataTables.select.min.js"></script>
+        <!-- third party js ends -->
+
+        <!-- demo app -->
+        <script src="assets/js/pages/demo.datatable-init.js"></script>
+        <!-- end demo js-->
+
+    </body>
+</html>

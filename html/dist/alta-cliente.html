@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Hyper - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- inline style to handle loading of various element-->
+        <style>body.loading {visibility: hidden;}</style>
+
+        <!-- third party css -->
+        <link href="assets/css/vendor/dataTables.bootstrap4.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/vendor/responsive.bootstrap4.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/vendor/buttons.bootstrap4.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/vendor/select.bootstrap4.css" rel="stylesheet" type="text/css" />
+        <!-- third party css end -->
+
+        <!-- App css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="main-style-container" />
+
+    </head>
+
+    <body class="loading">
+        <div id="detached-topbar-placeholder"></div>
+        <!-- Begin page -->
+        <div class="wrapper">
+
+            <div id="vertical-sidebar-placeholder"></div>
+            <div id="detached-sidebar-placeholder"></div>
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <div id="vertical-topbar-placeholder"></div>
+                    <div id="horizontal-topbar-placeholder"></div>
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Activos</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Lista</a></li>
+                                            <li class="breadcrumb-item active">Alta Cliente</li>
+                                        </ol>
+                                    </div>
+                                    <h4 class="page-title">Alta Cliente</h4>
+                                </div>
+                            </div>
+                        </div>     
+                        <!-- end page title --> 
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title">Alta Cliente</h4>
+                                        <h6>&nbsp</h6>
+                                        <form class="form-inline">
+                                        <button type="button" class="btn btn-info mr-2 mb-1 mt-1" data-toggle="modal" data-target="#alta-cliente-fisica"><i class="mdi mdi-account-multiple-plus-outline mr-2"></i>Añadir Cliente Física</button>
+                                        <button type="button" class="btn btn-info mt-1 mb-1" data-toggle="modal" data-target="#alta-cliente-moral"><i class="mdi mdi-account-multiple-plus-outline mr-2"></i>Añadir Cliente Moral</button>
+                                        </form>
+                                        <h6>&nbsp</h6>
+
+                                        <!-- COMIENZA MODAL DE AÑADIR CLIENTE -->
+
+                                              <!-- SignIn modal content -->
+
+                                              
+                                        <div id="alta-cliente-fisica" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                                <div class="modal-dialog modal-full-width">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body" action="#">
+                                                            
+                                                                <div class="text-center mt-2 mb-4">
+                                                                    <h1><i class="mdi mdi-account-multiple-plus-outline"></i></h1>
+                                                                    <h2>Añadir Cliente Persona Física</h2> 
+                                                                </div>
+                                                                
+                                                                <form class="form-inline">
+            
+                                                                    <div class="form-group col-md-3 mt-2 mb-2">
+                                                                        <label for="nombre-proveedor">Id Solicitud</label>
+                                                                            <div class="custom-file">
+                                                                                <input class="form-control" type="text" required="" id="IdSolicitudForm" placeholder="id">
+                                                                            </div>
+                                                                    </div>
+    
+                                                                    <div class="form-group col-md-3 mt-2 mb-2">
+                                                                            <label for="nombre-proveedor">Id Cliente</label>
+                                                                                <div class="custom-file">
+                                                                                    <input class="form-control" type="text" required="" id="IdClienteForm" placeholder="id">
+                                                                                </div>
+                                                                    </div>
+                                                                    <div class="form-group col-md-3 mt-2 mb-2">
+                                                                            <label for="nombre-proveedor">Nombre del Cliente</label>
+                                                                                <div class="custom-file">
+                                                                                    <input class="form-control" type="text" required="" id="NombreCliente" placeholder="nombre">
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="form-group col-md-3 mt-2 mb-2">
+                                                                            <label for="nombre-proveedor">Apellido Paterno</label>
+                                                                                <div class="custom-file">
+                                                                                    <input class="form-control" type="text" required="" id="ApellidoPaterno" placeholder="apellido">
+                                                                            </div>
+                                                                    </div>
+                                                                </form>
+    
+                                                                <form class="form-inline">
+
+                                                                        <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                <label for="nombre-proveedor">Fecha de Nacimiento</label>
+                                                                                    <div class="custom-file">
+                                                                                            <input type="text" class="form-control" data-provide="datepicker">
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                <label for="LugarNacimientoForm">Lugar de Nacimiento</label>
+                                                                                    <div class="custom-file">
+                                                                                            <select class="form-control" id="LugarNacimientoForm">
+                                                                                                    <option>Aguascalientes</option>
+                                                                                                    <option>Baja California</option>
+                                                                                                    <option>Baja California Sur</option>
+                                                                                                    <option>Chiapas</option>
+                                                                                                    <option>Chihuahua</option>
+                                                                                                    <option>Coahuila</option>
+                                                                                                    <option>Colima</option>
+                                                                                                    <option>Durango</option>
+                                                                                                    <option>Estado de México</option>
+                                                                                                    <option>Guanajuato</option>
+                                                                                                    <option>Guerrero</option>
+                                                                                                    <option>Hidalgo</option>
+                                                                                                    <option>Jalisco</option>
+                                                                                                    <option>Michoacán</option>
+                                                                                                    <option>Morelos</option>
+                                                                                                    <option>Nayarit</option>
+                                                                                                    <option>Nuevo León</option>
+                                                                                                    <option>Oaxaca</option>
+                                                                                                    <option>Puebla</option>
+                                                                                                    <option>Querétaro</option>
+                                                                                                    <option>Quintana Roo</option>
+                                                                                                    <option>San Luis Potosí</option>
+                                                                                                    <option>Sinaloa</option>
+                                                                                                    <option>Sonora</option>
+                                                                                                    <option>Tabasco</option>
+                                                                                                    <option>Tamaulipas</option>
+                                                                                                    <option>Ciudad de México</option>
+                                                                                                    <option>Tlaxcala</option>
+                                                                                                    <option>Veracruz</option>
+                                                                                                    <option>Yucatán</option>
+                                                                                                    <option>Zacatecas</option>
+                                                                                                </select>
+                                                                                </div>
+                                                                        </div>
+            
+                                                                
+                                                                        <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                <label for="nombre-proveedor">CURP</label>
+                                                                                    <div class="custom-file">
+                                                                                        <input class="form-control" type="text" required="" id="CURPForm" placeholder="CURP">
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                <label for="nombre-proveedor">Código Postal</label>
+                                                                                    <div class="custom-file">
+                                                                                        <input class="form-control" type="text" required="" id="CPForm" placeholder="CP">
+                                                                                </div>
+                                                                        </div>
+                                                                    </form>
+    
+                                                                <form class="form-inline">
+                                                                        <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                <label for="atencion" class="mr-2">Municipio</label>
+                                                                                <input class="form-control" type="text" required="" id="MunicipioForm" placeholder="Municipio">
+                                                                        </div>
+                                                                        <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                <label for="atencion" class="mr-2">Colonia</label>
+                                                                                <input class="form-control" type="text" required="" id="ColoniaForm" placeholder="Colonia">
+                                                                        </div>
+                                                                        <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                <label for="atencion" class="mr-2">Num. Ext</label>
+                                                                                <input class="form-control" type="text" required="" id="NumExtForm" placeholder="#">
+                                                                        </div>
+                                                                        <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                <label for="atencion" class="mr-2">Num. Int</label>
+                                                                                <input class="form-control" type="text" required="" id="NumIntForm" placeholder="#">
+                                                                        </div>
+                                                                </form>
+    
+                                                                <form class="form-inline">
+                                                                        <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                <label for="EntidadForm" class="mr-2">Entidad</label>
+                                                                                <select class="form-control" id="EntidadForm">
+                                                                                        <option>Aguascalientes</option>
+                                                                                        <option>Baja California</option>
+                                                                                        <option>Baja California Sur</option>
+                                                                                        <option>Chiapas</option>
+                                                                                        <option>Chihuahua</option>
+                                                                                        <option>Coahuila</option>
+                                                                                        <option>Colima</option>
+                                                                                        <option>Durango</option>
+                                                                                        <option>Estado de México</option>
+                                                                                        <option>Guanajuato</option>
+                                                                                        <option>Guerrero</option>
+                                                                                        <option>Hidalgo</option>
+                                                                                        <option>Jalisco</option>
+                                                                                        <option>Michoacán</option>
+                                                                                        <option>Morelos</option>
+                                                                                        <option>Nayarit</option>
+                                                                                        <option>Nuevo León</option>
+                                                                                        <option>Oaxaca</option>
+                                                                                        <option>Puebla</option>
+                                                                                        <option>Querétaro</option>
+                                                                                        <option>Quintana Roo</option>
+                                                                                        <option>San Luis Potosí</option>
+                                                                                        <option>Sinaloa</option>
+                                                                                        <option>Sonora</option>
+                                                                                        <option>Tabasco</option>
+                                                                                        <option>Tamaulipas</option>
+                                                                                        <option>Ciudad de México</option>
+                                                                                        <option>Tlaxcala</option>
+                                                                                        <option>Veracruz</option>
+                                                                                        <option>Yucatán</option>
+                                                                                        <option>Zacatecas</option>
+                                                                                    </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                <label for="SexoForm" class="mr-2">Sexo</label>
+                                                                                <select class="form-control" id="SexoForm">
+                                                                                        <option>Hombre</option>
+                                                                                        <option>Mujer</option>
+                                                                                </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                <label for="TelefonoForm" class="mr-2">Teléfono</label>
+                                                                                <input class="form-control" id="TelefonoForm" placeholder="(00) 0000 - 0000"></input>
+                                                                        </div>
+                                                                        <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                <label for="CorreoForm" class="mr-2">Correo</label>
+                                                                                <input class="form-control" id="CorreoForm" placeholder="___@___.__"></input>
+                                                                        </div>
+                                                                        
+                                                                </form>
+                                                                        <div>
+                                                                            &nbsp
+                                                                        </div>
+                                                                        <div>
+                                                                            &nbsp
+                                                                        </div>
+            
+                                                                        <div class="form-group col-md-2">
+                                                                                <button class="btn btn-rounded btn-primary" class="mr-2 ml-2" type="sumbit">Agregar</button>
+                                                                        </div>
+    
+                                                        </div>
+                                                    </div><!-- /.modal-content -->
+                                                </div><!-- /.modal-dialog -->
+                                            </div><!-- /.modal -->
+
+
+
+                                            <!-- COMIENZA NODAL PARA INFORMACIÓN DE CLIENTE MORAL -->
+
+                                            <div id="alta-cliente-moral" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                                    <div class="modal-dialog modal-full-width">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body" action="#">
+                                                                
+                                                                    <div class="text-center mt-2 mb-4">
+                                                                        <h1><i class="mdi mdi-account-multiple-plus-outline"></i></h1>
+                                                                        <h2>Añadir Cliente Persona Moral</h2> 
+                                                                    </div>
+                                                                    
+                                                                    <form class="form-inline">
+                
+                                                                        <div class="form-group col-md-3 mt-2 mb-2">
+                                                                            <label for="nombre-proveedor">Id Solicitud</label>
+                                                                                <div class="custom-file">
+                                                                                    <input class="form-control" type="text" required="" id="IdSolicitudForm" placeholder="id">
+                                                                                </div>
+                                                                        </div>
+        
+                                                                        <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                <label for="nombre-proveedor">Id Cliente</label>
+                                                                                    <div class="custom-file">
+                                                                                        <input class="form-control" type="text" required="" id="IdClienteForm" placeholder="id">
+                                                                                    </div>
+                                                                        </div>
+                                                                        <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                <label for="nombre-proveedor">Razón Social</label>
+                                                                                    <div class="custom-file">
+                                                                                        <input class="form-control" type="text" required="" id="NombreCliente" placeholder="nombre">
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                <label for="nombre-proveedor">Fecha de Nacimiento</label>
+                                                                                    <div class="custom-file">
+                                                                                            <input type="text" class="form-control" data-provide="datepicker">
+                                                                                </div>
+                                                                        </div>
+                                                                    </form>
+        
+                                                                    <form class="form-inline">
+    
+                                                                            <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                    <label for="LugarNacimientoForm">Lugar de Nacimiento</label>
+                                                                                        <div class="custom-file">
+                                                                                                <select class="form-control" id="LugarNacimientoForm">
+                                                                                                        <option>Aguascalientes</option>
+                                                                                                        <option>Baja California</option>
+                                                                                                        <option>Baja California Sur</option>
+                                                                                                        <option>Chiapas</option>
+                                                                                                        <option>Chihuahua</option>
+                                                                                                        <option>Coahuila</option>
+                                                                                                        <option>Colima</option>
+                                                                                                        <option>Durango</option>
+                                                                                                        <option>Estado de México</option>
+                                                                                                        <option>Guanajuato</option>
+                                                                                                        <option>Guerrero</option>
+                                                                                                        <option>Hidalgo</option>
+                                                                                                        <option>Jalisco</option>
+                                                                                                        <option>Michoacán</option>
+                                                                                                        <option>Morelos</option>
+                                                                                                        <option>Nayarit</option>
+                                                                                                        <option>Nuevo León</option>
+                                                                                                        <option>Oaxaca</option>
+                                                                                                        <option>Puebla</option>
+                                                                                                        <option>Querétaro</option>
+                                                                                                        <option>Quintana Roo</option>
+                                                                                                        <option>San Luis Potosí</option>
+                                                                                                        <option>Sinaloa</option>
+                                                                                                        <option>Sonora</option>
+                                                                                                        <option>Tabasco</option>
+                                                                                                        <option>Tamaulipas</option>
+                                                                                                        <option>Ciudad de México</option>
+                                                                                                        <option>Tlaxcala</option>
+                                                                                                        <option>Veracruz</option>
+                                                                                                        <option>Yucatán</option>
+                                                                                                        <option>Zacatecas</option>
+                                                                                                    </select>
+                                                                                    </div>
+                                                                            </div>
+                
+                                                                    
+                                                                            <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                    <label for="nombre-proveedor">CURP</label>
+                                                                                        <div class="custom-file">
+                                                                                            <input class="form-control" type="text" required="" id="CURPForm" placeholder="CURP">
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                    <label for="nombre-proveedor">RFC</label>
+                                                                                        <div class="custom-file">
+                                                                                            <input class="form-control" type="text" required="" id="RFCForm" placeholder="CURP">
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                    <label for="nombre-proveedor">Código Postal</label>
+                                                                                        <div class="custom-file">
+                                                                                            <input class="form-control" type="text" required="" id="CPForm" placeholder="CP">
+                                                                                    </div>
+                                                                            </div>
+                                                                        </form>
+        
+                                                                    <form class="form-inline">
+                                                                            <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                    <label for="atencion" class="mr-2">Municipio</label>
+                                                                                    <input class="form-control" type="text" required="" id="MunicipioForm" placeholder="Municipio">
+                                                                            </div>
+                                                                            <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                    <label for="atencion" class="mr-2">Colonia</label>
+                                                                                    <input class="form-control" type="text" required="" id="ColoniaForm" placeholder="Colonia">
+                                                                            </div>
+                                                                            <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                    <label for="atencion" class="mr-2">Num. Ext</label>
+                                                                                    <input class="form-control" type="text" required="" id="NumExtForm" placeholder="#">
+                                                                            </div>
+                                                                            <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                    <label for="atencion" class="mr-2">Num. Int</label>
+                                                                                    <input class="form-control" type="text" required="" id="NumIntForm" placeholder="#">
+                                                                            </div>
+                                                                    </form>
+        
+                                                                    <form class="form-inline">
+                                                                            <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                    <label for="EntidadForm" class="mr-2">Entidad</label>
+                                                                                    <select class="form-control" id="EntidadForm">
+                                                                                            <option>Aguascalientes</option>
+                                                                                            <option>Baja California</option>
+                                                                                            <option>Baja California Sur</option>
+                                                                                            <option>Chiapas</option>
+                                                                                            <option>Chihuahua</option>
+                                                                                            <option>Coahuila</option>
+                                                                                            <option>Colima</option>
+                                                                                            <option>Durango</option>
+                                                                                            <option>Estado de México</option>
+                                                                                            <option>Guanajuato</option>
+                                                                                            <option>Guerrero</option>
+                                                                                            <option>Hidalgo</option>
+                                                                                            <option>Jalisco</option>
+                                                                                            <option>Michoacán</option>
+                                                                                            <option>Morelos</option>
+                                                                                            <option>Nayarit</option>
+                                                                                            <option>Nuevo León</option>
+                                                                                            <option>Oaxaca</option>
+                                                                                            <option>Puebla</option>
+                                                                                            <option>Querétaro</option>
+                                                                                            <option>Quintana Roo</option>
+                                                                                            <option>San Luis Potosí</option>
+                                                                                            <option>Sinaloa</option>
+                                                                                            <option>Sonora</option>
+                                                                                            <option>Tabasco</option>
+                                                                                            <option>Tamaulipas</option>
+                                                                                            <option>Ciudad de México</option>
+                                                                                            <option>Tlaxcala</option>
+                                                                                            <option>Veracruz</option>
+                                                                                            <option>Yucatán</option>
+                                                                                            <option>Zacatecas</option>
+                                                                                        </select>
+                                                                            </div>
+                                                                            <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                    <label for="SexoForm" class="mr-2">Sexo</label>
+                                                                                    <select class="form-control" id="SexoForm">
+                                                                                            <option>Hombre</option>
+                                                                                            <option>Mujer</option>
+                                                                                    </select>
+                                                                            </div>
+                                                                            <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                    <label for="TelefonoForm" class="mr-2">Teléfono</label>
+                                                                                    <input class="form-control" id="TelefonoForm" placeholder="(00) 0000 - 0000"></input>
+                                                                            </div>
+                                                                            <div class="form-group col-md-3 mt-2 mb-2">
+                                                                                    <label for="CorreoForm" class="mr-2">Correo</label>
+                                                                                    <input class="form-control" id="CorreoForm" placeholder="___@___.__"></input>
+                                                                            </div>
+                                                                            
+                                                                    </form>
+
+                                                                    <form class="form-inline">
+                                                                        
+                                                                            <div class="form-group col-md-2 mt-2 mb-2">
+                                                                                    <label for="TipoUbicacionForm" class="mr-2">Tipo de Ubicación</label>
+                                                                                    <select class="form-control" id="TipoUbicacionForm">
+                                                                                            <option>Tipo 1</option>
+                                                                                            <option>Tipo 2</option>
+                                                                                            <option>Tipo 3</option>
+                                                                                    </select>
+                                                                            </div>
+                                                                            <div class="form-group col-md-2 mt-2 mb-2 mr-4">
+                                                                                    <label for="IndustriaForm" class="mr-2">Industria</label>
+                                                                                    <input class="form-control" id="IndustriaForm" placeholder="tipo"></input>
+                                                                            </div>
+                                                                            <div class="form-group col-md-2 mt-2 mb-2 mr-4">
+                                                                                    <label for="SubIndustriaForm" class="mr-2">SubIndustria</label>
+                                                                                    <input class="form-control" id="SubIndustriaForm" placeholder="tipo"></input>
+                                                                            </div>
+                                                                            <div class="form-group col-md-2 mt-2 mb-2">
+                                                                                    <label for="NumeroEmpleadosForm" class="mr-2">Número de empleados</label>
+                                                                                    <select class="form-control" id="NumeroEmpleadosForm">
+                                                                                            <option>Menor a 5</option>
+                                                                                            <option>Menor a 50</option>
+                                                                                            <option>Mayor a 50</option>
+                                                                                    </select>
+                                                                            </div>
+                                                                            <div class="form-group col-md-2 mt-2 mb-2">
+                                                                                    <label for="PaginaForm" class="mr-2">Página web (si existe)</label>
+                                                                                    <input class="form-control" id="PaginaForm" placeholder="www.___.com"></input>
+                                                                            </div>
+
+                                                                    </form>
+                                                                            <div>
+                                                                                &nbsp
+                                                                            </div>
+                                                                            <div>
+                                                                                &nbsp
+                                                                            </div>
+                
+                                                                            <div class="form-group col-md-2">
+                                                                                    <button class="btn btn-rounded btn-primary" class="mr-2 ml-2" type="sumbit">Agregar</button>
+                                                                            </div>
+        
+                                                            </div>
+                                                        </div><!-- /.modal-content -->
+                                                    </div><!-- /.modal-dialog -->
+                                                </div><!-- /.modal -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <!-- COMIENZA TABLA-->
+
+                                        <table id="scroll-horizontal-datatable" class="table w-100 nowrap">
+                                            <thead>
+                                                <tr>
+                                                        <th>Tipo de Persona</th>
+                                                        <th>Id Solicitud</th>
+                                                        <th>Id Cliente</th>
+                                                        <th>Nombre</th>
+                                                        <th>Apellido Paterno</th>
+                                                        <th>Apellido Materno</th>
+                                                        <th>Fecha de Nacimiento</th>
+                                                        <th>Lugar de Nacimiento</th>
+                                                        <th>CURP</th>
+                                                        <th>RFC</th>
+                                                        <th>CP</th>
+                                                        <th>Municipio</th>
+                                                        <th>Colonia</th>
+                                                        <th>Num. Exterior</th>
+                                                        <th>Num. Interior</th>
+                                                        <th>Entidad</th>
+                                                        <th>Sexo</th>
+                                                        <th>Teléfono</th>
+                                                        <th>Correo</th>
+                                                        <th>Estatus de Casa</th>
+                                                        <th>Añadir Aval</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <select class="form-control" id="Sexo">
+                                                                <option>Física</option>
+                                                                <option>Moral</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="IdSolicitud">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="IdCliente">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="NombreCliente">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="ApellidoPaterno">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="ApellidoMaterno">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control date" id="FechaNacimiento" data-toggle="date-picker" data-single-date-picker="true">
+                                                    </td>
+                                                    <td>    
+                                                        <select class="form-control" id="LugarNacimiento">
+                                                            <option>Aguascalientes</option>
+                                                            <option>Baja California</option>
+                                                            <option>Baja California Sur</option>
+                                                            <option>Chiapas</option>
+                                                            <option>Chihuahua</option>
+                                                            <option>Coahuila</option>
+                                                            <option>Colima</option>
+                                                            <option>Durango</option>
+                                                            <option>Estado de México</option>
+                                                            <option>Guanajuato</option>
+                                                            <option>Guerrero</option>
+                                                            <option>Hidalgo</option>
+                                                            <option>Jalisco</option>
+                                                            <option>Michoacán</option>
+                                                            <option>Morelos</option>
+                                                            <option>Nayarit</option>
+                                                            <option>Nuevo León</option>
+                                                            <option>Oaxaca</option>
+                                                            <option>Puebla</option>
+                                                            <option>Querétaro</option>
+                                                            <option>Quintana Roo</option>
+                                                            <option>San Luis Potosí</option>
+                                                            <option>Sinaloa</option>
+                                                            <option>Sonora</option>
+                                                            <option>Tabasco</option>
+                                                            <option>Tamaulipas</option>
+                                                            <option>Ciudad de México</option>
+                                                            <option>Tlaxcala</option>
+                                                            <option>Veracruz</option>
+                                                            <option>Yucatán</option>
+                                                            <option>Zacatecas</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="CURP">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="RFC">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="CP">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="Municipio">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="Colonia">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="Num. Exterior">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="Num. Interior">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="Entidad">
+                                                    </td>
+                                                    <td>
+                                                            <select class="form-control" id="Sexo">
+                                                                    <option>Hombre</option>
+                                                                    <option>Mujer</option>
+                                                            </select>
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="Telefono">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="Correo">
+                                                    </td>
+                                                    <td>
+                                                        <input class="form-control" type="text" required="" id="EstatusCasa">
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="">Añadir</button>
+                                                    </td>
+                                                </tr>
+                                               
+                                            </tbody>
+                                        </table>
+
+                                    </div> <!-- end card body-->
+                                </div> <!-- end card -->
+                            </div><!-- end col-->
+                        </div>
+                        <!-- end row-->
+
+
+                            </div><!-- end col-->
+                        </div>
+                        <!-- end row-->
+                        
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                2018 - 2019 © Hyper - Coderthemes.com
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-right footer-links d-none d-md-block">
+                                    <a href="javascript: void(0);">About</a>
+                                    <a href="javascript: void(0);">Support</a>
+                                    <a href="javascript: void(0);">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+
+          <div class="rightbar-title">
+            <a href="javascript:void(0);" class="right-bar-toggle float-right">
+              <i class="dripicons-cross noti-icon"></i>
+            </a>
+            <h5 class="m-0">Settings</h5>
+          </div>
+
+          <div class="slimscroll-menu rightbar-content">
+
+    
+
+            <!-- Settings -->
+            <h5 class="pl-2">Color Scheme</h5>
+            <hr class="mb-0" />
+
+            <div class="p-2">
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="color-scheme-mode" value="light" id="light-mode-check" checked />
+                <label class="custom-control-label" for="light-mode-check">Light Mode</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="color-scheme-mode" value="dark" id="dark-mode-check" />
+                <label class="custom-control-label" for="dark-mode-check">Dark Mode</label>
+              </div>
+            </div>
+
+            <h5 class="pl-2">Layout</h5>
+            <hr class="mb-0" />
+
+            <div class="p-2">
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="layout" value="vertical" id="vertical-check" checked />
+                <label class="custom-control-label" for="vertical-check">Vertical Layout (Default)</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="layout" value="horizontal" id="horizontal-check" />
+                <label class="custom-control-label" for="horizontal-check">Horizontal Layout</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="layout" value="detached" id="detached-check" />
+                <label class="custom-control-label" for="detached-check">Detached Layout</label>
+              </div>
+            </div>
+
+            <h5 class="pl-2">Width</h5>
+            <hr class="mb-0" />
+            <div class="p-2">
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="width" value="fluid" id="fluid-check" checked />
+                <label class="custom-control-label" for="fluid-check">Fluid</label>
+              </div>
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="width" value="boxed" id="boxed-check" />
+                <label class="custom-control-label" for="boxed-check">Boxed</label>
+              </div>
+            </div>
+
+            <h5 class="pl-2">Left Sidebar</h5>
+            <hr class="mb-0" />
+
+            <div class="p-2">
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="theme" value="default" id="default-check" checked />
+                <label class="custom-control-label" for="default-check">Default</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="theme" value="light" id="light-check" />
+                <label class="custom-control-label" for="light-check">Light</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-3">
+                <input type="radio" class="custom-control-input" name="theme" value="dark" id="dark-check" />
+                <label class="custom-control-label" for="dark-check">Dark</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="compact" value="fixed" id="fixed-check" checked />
+                <label class="custom-control-label" for="fixed-check">Fixed</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="compact" value="condensed" id="condensed-check" />
+                <label class="custom-control-label" for="condensed-check">Condensed</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="compact" value="scrollable" id="scrollable-check" />
+                <label class="custom-control-label" for="scrollable-check">Scrollable</label>
+              </div>
+            </div>
+
+            <div class="p-2 text-center">
+              <button class="btn btn-primary btn-block" id="resetBtn">Reset to Default</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="rightbar-overlay"></div>
+        <!-- /Right-bar -->
+
+
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+
+        <!-- third party js -->
+        <script src="assets/js/vendor/jquery.dataTables.min.js"></script>
+        <script src="assets/js/vendor/dataTables.bootstrap4.js"></script>
+        <script src="assets/js/vendor/dataTables.responsive.min.js"></script>
+        <script src="assets/js/vendor/responsive.bootstrap4.min.js"></script>
+        <script src="assets/js/vendor/dataTables.buttons.min.js"></script>
+        <script src="assets/js/vendor/buttons.bootstrap4.min.js"></script>
+        <script src="assets/js/vendor/buttons.html5.min.js"></script>
+        <script src="assets/js/vendor/buttons.flash.min.js"></script>
+        <script src="assets/js/vendor/buttons.print.min.js"></script>
+        <script src="assets/js/vendor/dataTables.keyTable.min.js"></script>
+        <script src="assets/js/vendor/dataTables.select.min.js"></script>
+        <!-- third party js ends -->
+
+        <!-- demo app -->
+        <script src="assets/js/pages/demo.datatable-init.js"></script>
+        <!-- end demo js-->
+
+    </body>
+</html>

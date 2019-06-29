@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Hyper - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- inline style to handle loading of various element-->
+        <style>body.loading {visibility: hidden;}</style>
+
+        <!-- App css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="main-style-container" />
+
+    </head>
+
+    <body class="loading">
+        <div id="detached-topbar-placeholder"></div>
+        <!-- Begin page -->
+        <div class="wrapper">
+
+            <div id="vertical-sidebar-placeholder"></div>
+            <div id="detached-sidebar-placeholder"></div>
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <div id="vertical-topbar-placeholder"></div>
+                    <div id="horizontal-topbar-placeholder"></div>
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Solicitudes</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Lista</a></li>
+                                            <li class="breadcrumb-item active">Documentación</li>
+                                        </ol>
+                                    </div>
+                                    <h4 class="page-title">Documentos de usuario</h4>
+                                </div>
+                            </div>
+                        </div>     
+                        <!-- end page title --> 
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-body">
+
+                                        <h4 class="header-title">Documentos de: USER</h4>
+                                        <h2>&nbsp</h2>
+                                        
+                                        
+                                        <div class="row">
+                                        <h4 class="header-title col-md-6">Persona: TIPO PERSONA</h4>
+                                        <select class="custom-select col-md-3">
+                                                <option selected>En Análisis</option>
+                                                <option value="1">Aprobado</option>
+                                                <option value="2">Rechazado</option>
+                                        </select>
+                                        </div>
+
+                                        <h2>&nbsp</h2>
+                                   
+
+                                        <div class="table-responsive-sm">
+                                            <table class="table table-hover table-centered mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Documentos Titular</th>
+                                                        <th>Archivo</th>
+                                                        <th>Fecha</th>
+                                                        <th>Comentario</th>
+                                                        <th>Estatus</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Solicitud En Línea</td>
+                                                        <td style="color: rgb(26, 77, 170)">Solicitud llenada por el usuario</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Copia de Identificación Oficial Vigente</td>
+                                                        <td style="color: rgb(26, 77, 170)">identificacion.pdf</td>
+                                                        <td><span class="badge badge-primary">_/_/_</span></td>
+                                                        <td>
+                                                            <textarea class="form-control" id="example-textarea" rows="2"></textarea>
+                                                        </td>
+                                                        <td>
+                                                            <select class="custom-select mt-3">
+                                                                <option selected>En Análisis</option>
+                                                                <option value="1">Aprobado</option>
+                                                                <option value="2">Rechazado</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Copia del comprobante de domicilio</td>
+                                                        <td style="color: rgb(26, 77, 170)">comprobantedomicilio.pdf</td>
+                                                        <td><span class="badge badge-primary">_/_/_</span></td>
+                                                        <td>
+                                                            <textarea class="form-control" id="example-textarea" rows="2"></textarea>
+                                                        </td>
+                                                        <td>
+                                                            <select class="custom-select mt-3">
+                                                                <option selected>En Análisis</option>
+                                                                <option value="1">Aprobado</option>
+                                                                <option value="2">Rechazado</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Formato Buró de Crédito* Firmado</td>
+                                                        <td style="color: rgb(26, 77, 170)">consulta-buro.pdf</td>
+                                                        <td><span class="badge badge-primary">_/_/_</span></td>
+                                                        <td>
+                                                            <textarea class="form-control" id="example-textarea" rows="2"></textarea>
+                                                        </td>
+                                                        <td>
+                                                            <select class="custom-select mt-3">
+                                                                <option selected>En Análisis</option>
+                                                                <option value="1">Aprobado</option>
+                                                                <option value="2">Rechazado</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div> <!-- end table-responsive-->
+
+                                    </div> <!-- end card body-->
+                                </div> <!-- end card -->
+                            </div><!-- end col-->
+
+                        
+                       
+                        
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                2018 - 2019 © Hyper - Coderthemes.com
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-right footer-links d-none d-md-block">
+                                    <a href="javascript: void(0);">About</a>
+                                    <a href="javascript: void(0);">Support</a>
+                                    <a href="javascript: void(0);">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+
+          <div class="rightbar-title">
+            <a href="javascript:void(0);" class="right-bar-toggle float-right">
+              <i class="dripicons-cross noti-icon"></i>
+            </a>
+            <h5 class="m-0">Settings</h5>
+          </div>
+
+          <div class="slimscroll-menu rightbar-content">
+
+    
+
+            <!-- Settings -->
+            <h5 class="pl-2">Color Scheme</h5>
+            <hr class="mb-0" />
+
+            <div class="p-2">
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="color-scheme-mode" value="light" id="light-mode-check" checked />
+                <label class="custom-control-label" for="light-mode-check">Light Mode</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="color-scheme-mode" value="dark" id="dark-mode-check" />
+                <label class="custom-control-label" for="dark-mode-check">Dark Mode</label>
+              </div>
+            </div>
+
+            <h5 class="pl-2">Layout</h5>
+            <hr class="mb-0" />
+
+            <div class="p-2">
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="layout" value="vertical" id="vertical-check" checked />
+                <label class="custom-control-label" for="vertical-check">Vertical Layout (Default)</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="layout" value="horizontal" id="horizontal-check" />
+                <label class="custom-control-label" for="horizontal-check">Horizontal Layout</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="layout" value="detached" id="detached-check" />
+                <label class="custom-control-label" for="detached-check">Detached Layout</label>
+              </div>
+            </div>
+
+            <h5 class="pl-2">Width</h5>
+            <hr class="mb-0" />
+            <div class="p-2">
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="width" value="fluid" id="fluid-check" checked />
+                <label class="custom-control-label" for="fluid-check">Fluid</label>
+              </div>
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="width" value="boxed" id="boxed-check" />
+                <label class="custom-control-label" for="boxed-check">Boxed</label>
+              </div>
+            </div>
+
+            <h5 class="pl-2">Left Sidebar</h5>
+            <hr class="mb-0" />
+
+            <div class="p-2">
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="theme" value="default" id="default-check" checked />
+                <label class="custom-control-label" for="default-check">Default</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="theme" value="light" id="light-check" />
+                <label class="custom-control-label" for="light-check">Light</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-3">
+                <input type="radio" class="custom-control-input" name="theme" value="dark" id="dark-check" />
+                <label class="custom-control-label" for="dark-check">Dark</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="compact" value="fixed" id="fixed-check" checked />
+                <label class="custom-control-label" for="fixed-check">Fixed</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="compact" value="condensed" id="condensed-check" />
+                <label class="custom-control-label" for="condensed-check">Condensed</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="compact" value="scrollable" id="scrollable-check" />
+                <label class="custom-control-label" for="scrollable-check">Scrollable</label>
+              </div>
+            </div>
+
+            <div class="p-2 text-center">
+              <button class="btn btn-primary btn-block" id="resetBtn">Reset to Default</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="rightbar-overlay"></div>
+        <!-- /Right-bar -->
+
+
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+    </body>
+</html>
